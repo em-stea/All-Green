@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+html, body{
+    height: 100%;
+}
+body{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+/*navbar*/
+.navbar-brand{
+    font-family: 'DM Serif Text', serif;
+    font-size: 30px;
+}
+/*home*/
+.masthead{
+    background: url("img/home.jpg") no-repeat center;
+    background-color: rgb(75,75,75);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    max-height: 100vh;
+    width: 100%;
+}
+.masthead h2{
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+}
+.home{
+    height: 100vh;
+}
+/*nosotros*/
+.nosotros{
+    background-color: #F38A47;
+    height: auto;
+}
+.titulo-icono{
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.5rem;
+    color: black;
+}
+.font-weight-lighter{
+    font-size: 1.2rem;
+}
+/*sección-industrial*/
+.imagen-industrial{
+    width: 40%;
+    height: auto;
+}
+/*menu-ensaladas*/
+.bd-example{
+    width: 90%;
+}
+.carousel-caption{
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    padding: 10px 15px 20px 15px;
+}
+.carousel-indicators{
+    margin-bottom: 6px;
+}
+.explicativo{
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    width: 90%;
+    text-align: center;
+}
+/*menu-rolls*/
+.roll{
+    background-color: rgb(167, 207, 103);
+    color: white;
+}
+.titulo-roll{
+    font-size: 1.8rem;
+    color: #694088;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.texto-roll{
+    font-size: 1rem;
+    padding-top: 5px;
+}
+.titulo-primario{
+    font-family: 'DM Serif Text', serif;
+    color: #FF5733;
+    font-size: 1.9rem;
+}
+.titulo-secundario{
+    font-family: 'DM Serif Text', serif;
+    color: rgb(167, 207, 103);
+    font-size: 1.6rem;
+}
+/*ensalada-frutas*/
+.ensalada-frutas{
+    width: 300px;
+}
+/*locales*/
+.ubicacion{
+    margin-right: 5px;
+    font-size: 20px;
+    padding-right: 3px;
+}
+/*footer*/
+.pie{
+    height: 35%;
+}
+.redes{
+    font-size: 35px;
+    color: rgb(167, 207, 103);
+    padding: 0 5px;
+}
+.d-flex a{
+    text-decoration-line: none;
+}
+
+
+/* tablet */
+@media (min-width: 768px){
+    /*home*/
+    .masthead h2{
+        width: 90%;
+        font-size: 2.3rem;
+        letter-spacing: 0.3rem;
+    }
+    /*nosotros*/
+    .img-icono{
+        width: 75% !important;
+    }
+    .font-weight-lighter{
+        font-size: 1rem;
+    }
+    /*seccion-industrial*/
+    .imagen-industrial{
+        padding-right: 60px;
+    }
+    .explicativo{
+        width: 55%;
+        height: auto;
+        text-align: start;
+    }
+    .espacio{
+        height: 120px;
+    }
+    /*menu-ensaladas*/
+    .bd-example{
+        width: 45%;
+    }
+    .verdura{
+        width: 15%;
+        margin: 0 auto;
+    }
+}
+
+/* pc */
+@media(min-width: 992px){
+    /*navbar*/
+    .navbar-brand:hover{
+        color: #77D53D !important;
+    }
+    .nav-link:hover{
+        color: #77D53D !important;
+        text-decoration-line: underline; 
+    }
+    .nav-link.active{
+        color: #77D53D !important;
+    }
+    /*nosotros*/
+    .titulo-icono{
+        width: 50% !important;
+    }
+    .titulo-icono_2{
+        width: 70% !important;
+    }
+    /*sección-industrial*/
+    .imagen-industrial{
+        width: 30%;
+        padding-right: 60px;
+    }
+    .explicativo{
+        font-size: 1.2rem;
+        width: 45%;
+    }
+    /*menu-ensaladas*/
+    .bd-example{
+        width: 30%;
+    }
+    .verdura{
+        width: 10%;
+    }
+    /*menu-rolls*/
+    .titulo-roll{
+        font-size: 2rem;
+    }
+    /*footer*/
+    .redes:hover{
+        color: #F57D2F;
+    }
+}
