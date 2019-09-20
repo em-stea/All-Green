@@ -3,6 +3,6 @@
 <br>
 Responsive.
 ## Preview
-[<img src="https://user-images.githubusercontent.com/54424032/65290913-83071e00-db27-11e9-9018-db60a5436498.png">](https://em-stea.github.io/Green-Meal/)
+[<img src="https://user-images.githubusercontent.com/54424032/65345327-64009e80-dbb0-11e9-85cb-7a0b7abb9239.png">](https://em-stea.github.io/Green-Meal/)
 
 [View Preview](https://em-stea.github.io/Green-Meal/)
