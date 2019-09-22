@@ -13,21 +13,22 @@ body{
     font-size: 30px;
 }
 /*home*/
-.masthead{
-    background: url("img/home.jpg") no-repeat center;
-    background-color: rgb(75,75,75);
-    background-blend-mode: soft-light;
+.img_home{
+    background-position: center;
     background-size: cover;
-    max-height: 100vh;
-    width: 100%;
+    width: auto;
+    height: 100vh;
 }
-.masthead h2{
+.home h2{
     font-size: 2rem;
     letter-spacing: 0.3rem;
     font-weight: bold;
+    position: absolute;
+    z-index: 2;
 }
 .home{
     height: 100vh;
+    overflow-y: hidden;
 }
 /*nosotros*/
 .nosotros{
@@ -122,8 +123,12 @@ body{
 /* tablet */
 @media (min-width: 768px){
     /*home*/
-    .masthead h2{
-        width: 90%;
+    .img_home{
+        width: 100%;
+        height: auto;
+    }
+    .home h2{
+        width: 80%;
         font-size: 2.3rem;
         letter-spacing: 0.3rem;
     }

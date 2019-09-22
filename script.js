@@ -14,6 +14,17 @@ var scroll = new SmoothScroll('.scroll-trigger[href*="#"]', {
 	
 });
 
+/*carga asincrónica de home*/
+let img_home = document.querySelector(".img_home");
+
+fetch("img/home.jpg")
+.then(respuesta => respuesta.blob())
+.then(resp =>{
+      let url_home = URL.createObjectURL(resp)
+      img_home.src = url_home
+})
+.catch(error=> console.log(error))
+
 /*carga asincrónica de imágenes de productos*/
 let img_prod1 = document.querySelector(".img_prod1");
 let img_prod2 = document.querySelector(".img_prod2");
@@ -76,7 +87,6 @@ let roll_2 = document.querySelector(".roll_2");
 let roll_3 = document.querySelector(".roll_3");
 let roll_4 = document.querySelector(".roll_4");
 
-
 fetch("img/roll.jpg")
 .then(respuesta => respuesta.blob())
 .then(resp =>{
@@ -109,3 +119,4 @@ fetch("img/roll4.jpg")
 })
 
 .catch(error=> console.log(error))
+
